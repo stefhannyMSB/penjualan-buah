@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel=" logo" href="foto/toko.png" />
-    <title>BAB 1 TUGAS PRAKWEB</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+        <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
     <center>
-        <header>
-            <nav>
-                <h3> LOGIN </h3>
-                <img src="foto/logo.jpg" alt="logo" width="50px"  />
-                <form action="">
-                    <label for=" "> masukkan Email</label> <br />
-                    <input type="email" />
-                    <br />
-                    <label for=" "> masukkan sandi</label> <br />
-                    <input type="password"  />
-                    <br>
-                    <p> <button type="submit">Login</button> </br> </p>
-                    <p> <small> PT.Buah Indonesia </small> </p>
-                    <img src="foto/keranjang.png" alt="logo" width="35px"  /> 
-                    
-              </form>
-            </nav>
-        </header>
+      <header id="navbar">
+        <nav class="navbar-container container">
+          <a href="/" class="home-link">
+            <div class="navbar-logo"></div>
+            Website Name
+          </a>
+          <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div id="navbar-menu" aria-labelledby="navbar-toggle">
+            <ul class="navbar-links">
+                <li class="navbar-item"><a class="navbar-link" href="indeks.html">Home</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="login.html">Login</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="signIn.html">daftar</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="form-login">
+          <h3>Login</h3>
+          <p>Login Jika anda Sudah memiliki Akun</p>
+          <label for="">Username</label>
+          <input class="input" type="text" name="username" placeholder="Username" />
+          <label for="">Password</label>
+          <input class="input" type="password" name="password" placeholder="Password" />
+          <button class="button" type="submit">Login</button>
+          <a href="signIn.html" class="link-signIn">Tidak Punya Akun?</a>
+        </div>
+      </main>
+    
     </center>
-</body>
+  </body>
 </html>
