@@ -42,12 +42,51 @@
                 <div class="jumbotron-text">
                     <h1>Welcome TO FShop</h1>
                     <p>BELANJA BUAH DENGAN MUDAH, HEMAT, DAN BERKUALITAS</p>
-                    <button type="submit" ></a>daftar</button>
+                    
                 </div>
                 <img class="jumbotron-img" src="foto/etalase (1).jpg" alt="">
             </div>
         </main>
     </div>
+    <div class="slides">
+        <div class="slide">
+        <img src="Buah1.jpg" alt="Gambar Buah1">
+        </div>
+        <div class="slide">
+        <img src="Buah2.jpg" alt="Gambar Buah2">
+        </div>
+        <div class="slide">
+        <img src="Buah3.jpg" alt="Gambar Buah3">
+        </div>
+        <div class="navigation">
+        <a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
+        <a class = "next" onclick = "plusSlides(-1)">&#10095;</a>
+        </div>
+        </div>
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("slide");
+            if (n > slides.length)
+            {
+                slideIndex = 1;
+            }
+            if (n < 1)
+            {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++)
+            {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+            }
+</script>
 </body>
 
 </html>
