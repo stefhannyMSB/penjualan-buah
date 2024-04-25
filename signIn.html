@@ -39,7 +39,20 @@
                 <input class="input" type="text" name="nama" placeholder="Nama Lengkap" />
                 <label for="">Password</label>
                 <input class="input" type="password" name="password" placeholder="Password" />
-                <button class="button" type="submit">daftar</button>
+                <button class="button" type="submit" onclick="myFunction()" >daftar</button>
+                <p id="info"></p>
+                <script>
+                function myFunction() {
+                    let text = "";
+                    let pil = confirm("apakah anda sudah melakukan register ?");
+                    if (pil == true) {
+                        text = "Ya, anda sudah register";
+                    } else {
+                        text = "Tidak anda belum register ";
+                    }
+                    document.getElementById("info").innerHTML = text;
+                }
+                </script>
             </div>
         </main>
     </center>

@@ -37,11 +37,23 @@
           <input class="input" type="text" name="username" placeholder="Username" />
           <label for="">Password</label>
           <input class="input" type="password" name="password" placeholder="Password" />
-          <button class="button" type="submit">Login</button>
+          <button class="button" type="submit" onclick="myFunction()">Login</button>
+          <p id="info"></p>
+          <script>
+            function myFunction() {
+              let person = prompt("anda sudah login?", " ");
+              if (person != null) {
+                document.getElementById("info").innerHTML = `Halo ${person} login anda sukses`;
+              }
+              alert("login anda berhasil");
+            }
+          </script>
+      
           <a href="signIn.html" class="link-signIn">Tidak Punya Akun?</a>
         </div>
+        
+
       </main>
-    
     </center>
   </body>
 </html>
