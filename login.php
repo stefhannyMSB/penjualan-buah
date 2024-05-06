@@ -30,16 +30,17 @@
         </nav>
       </header>
       <main>
-        <div class="form-login">
+        <form class="form-login" action="proseslogin.php" method="post">
           <h3>Login</h3>
           <p>Login Jika anda Sudah memiliki Akun</p>
           <label for="">Username</label>
           <input class="input" type="text" name="username" placeholder="Username" />
           <label for="">Password</label>
           <input class="input" type="password" name="password" placeholder="Password" />
-          <button class="button" type="submit" onclick="myFunction()">Login</button>
+          <!-- <button class="button" type="submit" name="tombol" onclick="myFunction()">Login</button> -->
+          <button class="button" type="submit" name="tombol">Login</button>
           <p id="info"></p>
-          <script>
+          <!-- <script>
             function myFunction() {
               let person = prompt("anda sudah login?", " ");
               if (person != null) {
@@ -47,10 +48,10 @@
               }
               alert("login anda berhasil");
             }
-          </script>
+          </script> -->
       
           <a href="signIn.html" class="link-signIn">Tidak Punya Akun?</a>
-        </div>
+          </form>
         
 
       </main>
