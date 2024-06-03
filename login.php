@@ -22,15 +22,16 @@
           </button>
           <div id="navbar-menu" aria-labelledby="navbar-toggle">
             <ul class="navbar-links">
-                <li class="navbar-item"><a class="navbar-link" href="indeks.html">Home</a></li>
-                <li class="navbar-item"><a class="navbar-link" href="login.html">Login</a></li>
-                <li class="navbar-item"><a class="navbar-link" href="signIn.html">daftar</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="index.php">Home</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="login.php">Login</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="registrasi.php">daftar</a></li>
+                
             </ul>
           </div>
         </nav>
       </header>
       <main>
-        <form class="form-login" action="proseslogin.php" method="post">
+        <form class="form-login" action="login-proses.php" method="post">
           <h3>Login</h3>
           <p>Login Jika anda Sudah memiliki Akun</p>
           <label for="">Username</label>
@@ -38,7 +39,7 @@
           <label for="">Password</label>
           <input class="input" type="password" name="password" placeholder="Password" />
           <!-- <button class="button" type="submit" name="tombol" onclick="myFunction()">Login</button> -->
-          <button class="button" type="submit" name="tombol">Login</button>
+          <button class="button" type="submit" name="login">Login</button>
           <p id="info"></p>
           <!-- <script>
             function myFunction() {
@@ -50,7 +51,7 @@
             }
           </script> -->
       
-          <a href="signIn.html" class="link-signIn">Tidak Punya Akun?</a>
+          <p>Belum punya akun? <a href="registrasi.php">Daftar Sekarang</a></p>
           </form>
         
 
